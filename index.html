@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Navigator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <!-- Add markdown file links here -->
+                <li><a href="#" onclick="loadMarkdown('folder1/file1.md')">File 1</a></li>
+                <li><a href="#" onclick="loadMarkdown('folder2/file2.md')">File 2</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <div id="markdown-content">
+                <h1>Welcome</h1>
+                <p>Select a file from the sidebar.</p>
+            </div>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
